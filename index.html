@@ -38,7 +38,60 @@
 
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-bell"></i>Thông báo</a> </li>
+                        <li class="header__navbar-item header__navbar-item--notify">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item">
+                                            <a href="#" class="header__notify-link">
+                                                <img src="./asssets/img/QR/sale.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Voucher nóng hổi đừng vội bỏ qua!</span>
+                                                    <span class="header__notify-dec">💥 Voucher Hoàn Xu Xtra
+                                                        🌈 Đã có sẵn trong kho voucher của bạn
+                                                        ⏰ Hiệu lực: 0H 15/02/2022 - 23H59 15/02/2022
+                                                        👉 Số lượng có hạn - Dùng ngay bạn nhé!</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="#" class="header__notify-link">
+                                                <img src="./asssets/img/QR/new.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">ZTBee ơi, gia nhập Shopee thật là thích!</span>
+                                                    <span class="header__notify-dec">Shopee có bất ngờ tặng cho bạn đây: 🎁 Quà xịn xò giá 0đ 🚚 Mã freeship người dùng mới. Chọn ngay 1 ưu đãi. Chỉ cho đơn đầu tiên thôi đó nha!</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <a href="#" class="header__notify-link">
+                                                <img src="./asssets/img/QR/sale.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Bạn ơi! Đừng bỏ quên Voucher hot này</span>
+                                                    <span class="header__notify-dec">💥 Voucher Hoàn Xu Xtra
+                                                        🌈 Đã có sẵn trong kho voucher của bạn
+                                                        ⏰ Hiệu lực: 0H 15/02/2022 - 23H59 15/02/2022
+                                                        👉 Số lượng có hạn - Dùng ngay bạn nhé!</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <footer class="header__notify-footer">
+                                            <a href="#" class="header__notify-footer--btn">Xem tất cả </a>
+                                        </footer>
+                                    </ul>
+
+
+                                
+                                
+                            </div>
+
+                         </li>
                         <li class="header__navbar-item"><a href="" class="header__navbar-item-link"><i class="header__navbar-icon fa-solid fa-circle-question"></i>Trợ giúp</a></li>
                         <li class="header__navbar-item"><i class="header__navbar-icon fa-solid fa-globe"></i>Tiếng việt</li>
                         <li class="header__navbar-item header__navbar-item--separate">Đăng ký</li>
@@ -60,6 +113,58 @@
 
         </footer>
         <!-- end footer -->
+        
+    </div>
+    <!-- modal layout-->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+                <!-- authen form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input class="auth-form__input" placeholder="Email của bạn" type="email"></input>
+                            <input class="auth-form__input" placeholder="Nhập mật khẩu" type="password" ></input>
+                            <input class="auth-form__input" placeholder="Nhập lại mật khẩu" type="password" ></input>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy">
+                            Bằng việc đăng ký, bạn đã đông ý đăng ký với shopee về
+                            <a href="" class="auth-form__link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG KÝ</button>
+                    </div>
+                    
+                </div>
+                <div class="auth-form__footer">
+                    <a href="" class="btn  btn__width-icon auth-form__footer--fb">
+                    <i class="auth-form__footer-icon fa-brands fa-facebook-square"></i>
+                        <span class="auth-form__footer--text">Kết nối với facebook</span> 
+                    </a>
+                    <a href="" class="btn btn__width-icon auth-form__footer--gg">
+                        <i class=" auth-form__footer-icon fa-brands fa-google"></i>
+                        <span class="auth-form__footer--text">Kết nối với google</span> 
+                    </a>
+                </div>
+            
+            </div>
+
+            
+        </div>
+    
     </div>
 </body>
 </html>

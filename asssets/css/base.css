@@ -2,6 +2,8 @@
     --white-color : #fff;
     --black-color : #000;
     --text-color : #333; 
+    --primary-color: #FB5533;
+    --boder-color: #dbdbdb ;
 }
 * {
     box-sizing: inherit;
@@ -12,10 +14,51 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    display: flex;
+
+}
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__body {
+
+    margin: auto;
+    position: relative;
+
+}
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.3rem;
+    padding: 0 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
 .grid {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    
 
 } 
 .grid__full--width {
@@ -32,6 +75,19 @@ html {
 
     }
     to {
+        opacity: 1;
+
+    }
+}
+@keyframes faceInNoti {
+    from {
+        transform: scale(0);
+        opacity: 0;
+        
+
+    }
+    to {
+        transform: scale(1);
         opacity: 1;
 
     }
