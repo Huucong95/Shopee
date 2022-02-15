@@ -67,6 +67,7 @@
     left: 0;
     top: 100%;
     display: none;
+    animation: faceIn ease .4s;
 }
 .header__navbar-item--qr:hover  .header__qr {
     display: block;
