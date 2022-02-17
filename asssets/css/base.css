@@ -6,6 +6,7 @@
     --boder-color: #dbdbdb ;
     --navbar-height : 39px;
     --header-height : 120px;
+    --grid-width: 1200px;
     --header-search-height : calc(var(--header-height) - var(--navbar-height));
 }
 * {
@@ -51,7 +52,7 @@ html {
     padding: 0 8px;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1.6rem;
@@ -73,9 +74,62 @@ html {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
 .btn.btn--primary:hover {
     background-color: #F05D40;
 }
+.select-input {
+    height: 34px;
+    padding: 0 12px;
+    min-width: 200px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.select-input__label {
+    font-size: 1.4rem;
+
+}
+.select-input__icon {
+    font-size: 1.2rem;
+    color: #8d8d8d;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.pagination-item__link {
+    --height : 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    height: var(--height);
+    min-width: 42px;
+    display: block;
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+.pagination-item--active .pagination-item__link:hover {
+    background-color: rgba(251, 85, 51, 0.9);
+
+}
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+/* resposivre */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -90,7 +144,26 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
 }
+.grid__row-fix {
+    padding-top: 36px;
+}
+.grid__row-product {
+    padding: 10px 0;
+}
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(var(--grid-width) / 6 );
+}
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(10 * var(--grid-width) / 12);
+}
+
 @keyframes faceIn {
     from{
         opacity: 0;
