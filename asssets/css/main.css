@@ -978,4 +978,117 @@ i.home-product-item__like--icon-none {
 .home-pagination {
     margin-top: 35px;
     margin-bottom: 32px;
+    margin-bottom: 164px;
 }
+/* footer */ 
+.footer {
+    background-color: rgb(251,251,251);
+    color: rgba(0,0,0,.54);
+    border-top: 4px solid var(--primary-color);
+}
+.footer__heading {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 46px;
+}
+.footer__item {
+    list-style: none;
+}
+.footer__item-link:hover {
+    color: var(--primary-color);
+}
+.footer__item-link {
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 6px 0;
+}
+.footer__list {
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.footer__item-icon {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-right: 12px;
+    padding-bottom: 10px;
+}
+.footer__qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__qr-img {
+    width: 86px;
+    height: 86px;
+    border: 1px solid rgb(243, 243, 243);
+    margin-right: 8px;
+}
+.footer__qr-icon-app {
+    width: 86px;
+    margin: 8px 2px;
+}
+.footer__copyright {
+    margin: 0 auto;
+    border-top: 1px solid rgba(0,0,0,.54) ;
+}
+
+.footer__copyright-text {
+   font-size: 1.6rem;
+   font-weight: 1.8rem;
+}
+/* copyright */
+.copyright {
+    background-color:rgb(245,245,245);
+}
+.copyright img{margin-left:auto;margin-right:auto}
+.copyright__policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 42px;
+    margin-top: 0;
+}
+.copyright__policy-img {
+    width: 140px;
+    margin-right: 100px;
+}
+.copyright__policy-item {
+    list-style: none;
+}
+.copyright__policy-link-spe {
+    border-right: 1px solid #999;
+    padding-right: 12px;
+}
+.copyright__policy-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 12px;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.54);
+
+}
+.copyright__info {
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+.copyright__info-text {
+    color: rgba(0,0,0,.54);
+    text-decoration: none;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin: 16px 0;
+}
+/* .copyright__info-shopee {
+    margin-bottom: 20px;
+    display: inline-block;
+} */
