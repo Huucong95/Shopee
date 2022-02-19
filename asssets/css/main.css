@@ -342,6 +342,7 @@
     height: var(--header-search-height);
     display: flex;
     align-items: center;
+    margin: 0 8px;
 }
 .header__logo {
     width: 200px;
@@ -349,7 +350,17 @@
 }
 .header__logo-img {
     width: 150px;
-    color: var(--whit-color);
+    color: var(--white-color);
+}
+.header__logo-index {
+    color: transparent;
+    text-decoration: none;
+    display: block;
+    line-height: 0;
+
+}
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
 }
 .header__search {
     height: 40px;
@@ -360,6 +371,14 @@
     justify-content: flex-end;
     align-items: center;
     border-radius: 2px;
+}
+.header__mobile-search{
+    padding: 0 12px;
+    display: none;
+}
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
 }
 .header__cart {
     width: 150px;
@@ -567,7 +586,7 @@
     margin: 8px;
 }
 .header__cart-list-item {
-    height: 40vh;
+    max-height: 40vh;
     padding: 0;
     overflow-y: auto;
 }
@@ -608,6 +627,48 @@
     justify-content: flex-end;
     margin: 12px 10px;
     background-color: #fdfdfd;
+}
+.header__sort-bar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: var(--header-sort-bar-height);
+    background-color: #fff;
+    margin-top: 0;
+    padding-left: 0;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    display: none;
+}
+.header__sort-item {
+    list-style: none;
+    flex: 1;
+}
+.header__sort-item:first-child .header__sort-link::after  {
+    display: none;
+}
+.header__sort-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    line-height: var(--header-sort-bar-height);
+    text-align: center;   
+    position: relative;
+}
+.header__sort-link::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 60%;
+    align-items: center;
+    border-left: 1px solid #e5e5e5 ;
+    transform: translateY(-50%);
+}
+.header__sort-link--active .header__sort-link{
+    color: var(--primary-color);
 }
 /* container */
 .container {
