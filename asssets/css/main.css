@@ -828,7 +828,7 @@
     border-bottom-right-radius: 2px;
     background-color: var(--white-color);
     transform: top linear 0.5s;
-    right: 0;
+    top: 0;
 }
 .home-product-item:hover {
     top: -1px;

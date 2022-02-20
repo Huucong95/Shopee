@@ -33,6 +33,10 @@
     .header__sort-bar {
         display: flex;
     }
+    .footer__list,
+    .footer__heading {
+        text-align: center;
+    }
 }
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
