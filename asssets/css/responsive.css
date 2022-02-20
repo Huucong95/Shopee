@@ -40,6 +40,9 @@
     .copyright__policy {
         display: block;
     }
+    .grid__row-fix {
+        padding-top: 0px;
+    }
 }
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
