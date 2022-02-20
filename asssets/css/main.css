@@ -519,6 +519,7 @@
     cursor: pointer;
     display: inline-block;
     padding: 0 8px;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__cart-noti {
     position: absolute;
