@@ -1,9 +1,6 @@
 /* mobie tablet */
 @media (max-width: 1023px) {
-    :root {
-        --navbar-height: 0px;
-        --header-height: 72px;
-    }
+    
     .hide-on-mobie-tablet {
         display: none;
     }
@@ -49,6 +46,10 @@
 }
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --navbar-height: 0px;
+        --header-height: 72px;
+    }
     .hide-on-tablet {
         display: none;
     }
@@ -63,6 +64,10 @@
 
 /* mobile */
 @media (max-width:739px) {
+    :root {
+        --navbar-height: 0px;
+        --header-height: 48px;
+    }
     .hide-on-mobile {
         display: none;
     }
