@@ -110,6 +110,9 @@
     .container__content {
         margin: 0;
     }
+    .header__logo-img {
+        width: 110px;
+    }
     @keyframes mobileSearch {
         from{
             top: calc(var(--header-height) / 2);
